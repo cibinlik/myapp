@@ -1,5 +1,5 @@
 <h1> Yeni soru buradan sorulur </h1>
-<%= form_for :question do |f| %>
+<%= form_for :question, url: questions_path do |f| %>
 	<p>
 	<%= f.label :question %><br>
 	<%= f.text_field :question %>
