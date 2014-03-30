@@ -1,1 +1,10 @@
 <h1> Yeni soru buradan sorulur </h1>
+<%= form_for :question do |f| %>
+	<p>
+	<%= f.label :question %><br>
+	<%= f.text_field :question %>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>
