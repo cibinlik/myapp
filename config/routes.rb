@@ -1,7 +1,7 @@
 Myapp::Application.routes.draw do
-   resources :questions
-   root "welcome#index"
-   get "welcome/index"
+	resources :questions
+	root "welcome#index"
+	get "welcome/index"
   # root to: "welcome#index" root'un uzun haliymiş.
   
   # The priority is based upon order of creation: first created -> highest priority.
