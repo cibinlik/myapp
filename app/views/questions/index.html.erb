@@ -1,0 +1,13 @@
+<h1> Sorulari gösterelim </h1>
+
+<table>
+	<tr>
+		<th> Sorular </th>
+	</tr>
+	
+<% @questions.each do |question| %>
+	<tr>
+		<td><%=question.question %></td>
+	</tr>
+	<% end %>
+</table>
