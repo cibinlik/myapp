@@ -4,7 +4,7 @@ resources :questions
 
 
 root "welcome#index"
-end
+
 
 #	resources :questions
 #	root "welcome#index"
