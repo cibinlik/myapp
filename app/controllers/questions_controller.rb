@@ -4,7 +4,7 @@ def new
 end
 
 	def create
-		#@question = Question.new(params[:question])
+		@question = Question.new(params[:question])
 		@question.save
 		redirect_to @question
 		#render text: params[:question].inspect
