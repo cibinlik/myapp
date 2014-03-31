@@ -1,15 +1,11 @@
 Myapp::Application.routes.draw do
 
 resources :questions
-
-
 root "welcome#index"
-
-
 #	resources :questions
 #	root "welcome#index"
 #	get "welcome/index"
-#	questions GET /questions(.:format) questions#index
+	questions GET /questions(.:format) questions#index
 
 
 	
