@@ -10,6 +10,7 @@ def create
 	#render text: params[:question].inspect
 end
 
+private
 def question_params
 	params.require(:question).permit(:question)
 end
