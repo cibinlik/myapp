@@ -1,12 +1,19 @@
 class QuestionsController < ApplicationController
 
 def new
+	@question = Question.new
 end
 
 	def create
-		@question = Question.new(params[:question])
-		@question.save
-		redirect_to @question
+		@question = Question.new(params[:question].permit(:question))
+		
+		if @question.save
+			redirect_to @question
+		else
+			render 'new'
+		end
+		#@question.save
+		#redirect_to @question
 		#render text: params[:question].inspect
 	end
 
