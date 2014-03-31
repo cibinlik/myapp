@@ -3,6 +3,7 @@ Myapp::Application.routes.draw do
 	root "welcome#index"
 	get "welcome/index"
 	questions GET /questions(.:format) questions#index
+	end
   # root to: "welcome#index" root'un uzun haliymiş.
   
   # The priority is based upon order of creation: first created -> highest priority.
