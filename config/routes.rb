@@ -5,7 +5,7 @@ root "welcome#index"
 #	resources :questions
 #	root "welcome#index"
 #	get "welcome/index"
-	questions GET /questions(.:format) questions#index
+
 
 
 	
