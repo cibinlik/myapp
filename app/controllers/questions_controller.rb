@@ -1,8 +1,8 @@
 class QuestionsController < ApplicationController
 
-def new
+	def new
 	@question = Question.new
-end
+	end
 
 	def create
 		@question = Question.new(params[:question].permit(:question))
@@ -17,13 +17,14 @@ end
 		#render text: params[:question].inspect
 	end
 
+	def index
+		@questions = Question.all
+	end
+	
 	def show
 		@question = Question.find(params[:id])
 	end
 
-	def index
-		@questions = Question.all
-	end
 	
 	private
 	
