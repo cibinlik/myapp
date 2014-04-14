@@ -1,7 +1,6 @@
 Myapp::Application.routes.draw do
 
  resources :questions do
-    resources :comments
   end
 
   root "welcome#index"
