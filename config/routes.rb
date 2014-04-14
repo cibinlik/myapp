@@ -1,7 +1,10 @@
 Myapp::Application.routes.draw do
 
-resources :questions
-root "welcome#index"
+ resources :questions do
+    resources :comments
+  end
+
+  root "welcome#index"
 
 #	root "welcome#index"
 #	get "welcome/index"
